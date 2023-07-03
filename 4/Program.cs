@@ -1,8 +1,15 @@
 ﻿int i = 2;
 Console.Write ("Введите число: ");
-int Number = Convert.ToInt32(Console.ReadLine ());
+int Number = int.Parse(Console.ReadLine ());
 while (i < Number)
+
 {
-    if (i % 2 == 0) Console.Write ($"{i} ");
-    i++;
+    if (i % 2 == 0 && i != Number - 1) {Console.Write($"{i}, ");}
+    else {Console.Write (i);};
+    i = i + 2;
 }
+    if (i % 2 == 0 && i == Number) Console.Write(i);
+    
+    
+ 
+
