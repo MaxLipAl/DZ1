@@ -4,7 +4,7 @@ int Number = int.Parse(Console.ReadLine ());
 while (i < Number)
 
 {
-    if (i % 2 == 0 && i != Number - 1) {Console.Write($"{i}, ");}
+    if (i != Number - 1) {Console.Write($"{i}, ");}
     else {Console.Write (i);};
     i = i + 2;
 }
